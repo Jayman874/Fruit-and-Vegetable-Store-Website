@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<!--FAQ Page which displays any questions which the customer may have-->
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="myscripts.js"> </script>
+		<title>FAQ Page</title>
+	</head>
+	
+	<body>
+		<ul id="navigation">
+			<li><a href="registerandbuy.html">Register and Buy Products</a></li>
+			<li><a class="activepage" href="faq.html">FAQ Page</a></li>
+			<li><a href="productsandservices.html">Products and Services</a></li>
+			<li><a href="index.html">Homepage</a></li>
+		</ul>
+		
+		<h1>FAQ Page</h1>
+		<br>
+		<br>
+		<i>"Buy local and eat fresh Welly!"</i>
+		<hr>
+		<!-- faq awnswers display when you press the + button or minimise when you press the - button -->
+		<b>Commonly asked questions</b>
+		<img id="faqimage" src="fruitandvegetables.jpg" alt="Fruit and Vegetables 2" height="400" width="600" align="right" style="border: 10px solid #9DEE3F">
+		<br>
+		<br>
+		<u>Question: Is your produce ethically sourced?</u>
+		<button class="button" id="b1" onclick="return displayAnswer(this.id)">+</button>
+		<button class="button" id="-b1" onclick="return displayAnswer(this.id)">-</button>
+		<p id="answer1"></p>
+		
+		<u>Question: Do you sell 100% organic produce?</u>
+		<button class="button" id="b2" onclick="return displayAnswer(this.id)">+</button>
+		<button class="button" id="-b2" onclick="return displayAnswer(this.id)">-</button>
+		<p id="answer2"></p>
+			
+		<u>Question: When will i recieve my order?</u>
+		<button class="button" id="b3" onclick="return displayAnswer(this.id)">+</button>
+		<button class="button" id="-b3" onclick="return displayAnswer(this.id)">-</button>
+		<p id="answer3"></p>
+		
+		<u>Question: How do I contact you if I don’t receive my order?</u>
+		<button class="button" id="b4" onclick="return displayAnswer(this.id)">+</button>
+		<button class="button" id="-b4" onclick="return displayAnswer(this.id)">-</button>
+		<p id="answer4"></p>
+		
+		<u>Question: What is the return policy?</u>
+		<button class="button" id="b5" onclick="return displayAnswer(this.id)">+</button>
+		<button class="button" id="-b5" onclick="return displayAnswer(this.id)">-</button>
+		<p id="answer5"></p>
+		
+		<u>Question: I no longer want to be registered and receive emails from Fruitopia?</u>
+		<button class="button" id="b6" onclick="return displayAnswer(this.id)">+</button>
+		<button class="button" id="-b6" onclick="return displayAnswer(this.id)">-</button>
+		<p id="answer6"></p>
+		
+		<u>Question: How much is the shipping cost?</u>
+		<button class="button" id="b7" onclick="return displayAnswer(this.id)">+</button>
+		<button class="button" id="-b7" onclick="return displayAnswer(this.id)">-</button>
+		<p id="answer7"></p>
+		
+		
+	</body>
+
+
+</html>

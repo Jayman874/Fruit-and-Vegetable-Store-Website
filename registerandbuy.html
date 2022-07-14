@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<!-- Register and Buy page which allows users to register and unregister from fruitopia and purchase produce-->
+<html>
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="myscripts.js"> </script>
+		<title>Register and Buy Page</title>
+	</head>
+	
+	<body>
+		<ul id="navigation">
+			<li><a class="activepage" href="registerandbuy.html">Register and Buy Products</a></li>
+			<li><a href="faq.html">FAQ Page</a></li>
+			<li><a href="productsandservices.html">Products and Services</a></li>
+			<li><a href="index.html">Homepage</a></li>
+		</ul>
+		<h1>Register and Buy</h1>
+		<br>
+		<br>
+		<i>"Buy local and eat fresh Welly!"</i>
+		<hr>
+		<h3>Fill out this form to register to Fruitopia and recieve updates</h3>
+		
+		<!-- unregister and deregister submit box -->
+		<form name="confirm" method="post">
+			<input type="text" name="email">
+			<input type="submit" onclick="return register()" value="Register">
+			<input type="submit" onclick="return unregister()" value="Unregister">	
+		</form>
+		<!-- form to fill out how much of each fruit and vegetable wanted -->
+		<h3>Enter how many of each fruit or vegetable wanted</h3>
+		<form name="order" method="post">
+			<div id="buyfruit">
+				<p>Bananas - $0.80 ecah</p>
+				<input type="number" name="bananas" min="0">
+				<p>Apples - $0.50 each</p>
+				<input type="number" name="apples" min="0">
+				<p>Mangoes - $2.00 each</p>
+				<input type="number" name="mangoes" min="0">
+				<p>Oranges - $1.00 each</p>
+				<input type="number" name="oranges" min="0">
+			</div>
+			<div id="buyvegetables">
+				<p>Carrots - $1.10 each</p>
+				<input type="number" name="carrots" min="0">
+				<p>Potatoes - $0.90 each</p>
+				<input type="number" name="potatoes" min="0">
+				<p>Lettuce - $1.20 each</p>
+				<input type="number" name="lettuce" min="0">
+				<p>Pumpkins- $3.00 each</p>
+				<input type="number" name="pumpkins" min="0">
+				<br>
+				<br>
+				<input type="submit" onclick="return costOfCart()" value="Total Cost">
+				<br>
+			</div>
+		</form>
+		<!-- display all items in cart which have been selected from the form (uses javascript to calculate total cost and total number of items -->
+		<div id="display">
+			<b>Items in cart:</b>
+			<p id="totalbananas"></p>
+			<p id="totalapples"></p>
+			<p id="totalmangoes"></p>
+			<p id="totaloranges"></p>
+			<p id="totalcarrots"></p>
+			<p id="totalpotatoes"></p>
+			<p id="totallettuce"></p>
+			<p id="totalpumpkins"></p>
+			<p id="shipping"></p>
+			<p id="items"></p>
+			<p id="value"></p>
+			<hr>
+		</div>
+		<!-- pay now form which asks users for credentials to pay for items in cart -->
+		<form name ="pay" onsubmit="return (payNow() & costOfCart())" method="post">
+			<div id="payn">
+				<p>Email</p>
+				<input type="text" name="emailpayment">
+				<p>Card Number</p>
+				<input type="number" name="cardnumber" min="0">
+				<p>Name on Card</p>
+				<input type="text" name="nameoncard">
+				<p>Security Code</p>
+				<input type="number" name="cvc" maxlength="3" min="0">
+				<br> 
+				<br>
+				<input type="submit" value="Pay Now">
+				<hr>
+			</div>
+		</form>
+	</body>
+	
+</html>

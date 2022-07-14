@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<!--Products and Services page which displays the ranges of services and products avaliable to the customer-->
+<html>
+	
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="myscripts.js"> </script>
+		<title>Products and Services Page</title>
+	</head>
+	
+	<body>
+	
+		<ul id="navigation">
+			<li><a href="registerandbuy.html">Register and Buy Products</a></li>
+			<li><a href="faq.html">FAQ Page</a></li>
+			<li><a class="activepage" href="productsandservices.html">Products and Services</a></li>
+			<li><a href="index.html">Homepage</a></li>
+		</ul>
+		
+		<h1>Products and Services</h1>
+		<br>
+		<br>
+		<i>"Buy local and eat fresh Welly!"</i>
+		<hr>
+		<p>Fruitopia offers a range of locally sourced fruit and vegetables for purchase</p>
+		<p>We also offer a delivery service which will deliver any produce you order and pay for in 10 working days</p>
+		
+		<!-- grid class to divide up delivery time, fruits, vegetables and everything else intp sections -->
+		<div class="grid">
+			<div class="item1">
+				<h2 class="header">Delivery Times</h2>
+				<u>Monday</u>
+				<p>9:00am-5:00pm</p>
+				<u>Tuesday</u>
+				<p>9:00am-5:00pm</p>
+				<u>Wednesday</u>
+				<p>9:00am-5:00pm</p>
+				<u>Thursday</u>
+				<p>9:00am-5:00pm</p>
+				<u>Friday</u>
+				<p>10:00am-5:00pm</p>
+				<u>Saturday</u>
+				<p>10:00am-3:00pm</p>
+				<u>Sunday</u>
+				<p>Closed</p>
+				<br>
+				<br>
+				<br>
+				<br>
+				<img src="delivery.jpg" alt="Delivery" height="150" width="250">
+			</div>
+			<div class="item2">
+				<img src="bananas.jpg" id="img1" alt="Fruit and Vegetables 2" height="150" width="250">
+				<p id="produce1">Bananas - $0.80 each</p>
+			</div>
+			<div class="item3">
+				<img src="apples.jpg" id="img2" alt="Fruit and Vegetables 2" height="150" width="250">
+				<p id="produce2">Apples - $0.50 each</p>
+			</div>  
+			<div class="item4">
+				<img src="mangoes.jpg" id="img3" alt="Fruit and Vegetables 2" height="150" width="250">
+				<p id="produce3">Mangoes - $2.00 each</p>
+			</div>
+			<div class="item5">
+				<img src="oranges.jpg" id="img4" alt="Fruit and Vegetables 2" height="150" width="250">
+				<p id="produce4">Oranges - $1.00 each</p>
+			</div>
+			<input type="submit" onclick="return displayFruit()" value="Display Fruit">
+			<input type="submit" onclick="return displayVegetables()" value="Display Vegetables">
+			<div class="item6">
+				<h2>Produce coming soon</h2>
+				<p>Mushrooms</p>
+				<p>Tomatoes</p>
+				<p>Watermelons</p>
+				<p>Blueberries</p>
+				<p>Strawberries</p>
+				<p>Cucumbers</p>
+			</div>
+			<div class="item7">
+				<p id="blurb">"All of the produce seen on this page </p>
+				<p id="blurb">is ethically picked and locally</p>
+				<p id="blurb">sourced right here in Wellingtion</p>
+				<p id="blurb">This means you can be sure that</p>
+				<p id="blurb">every fruit or vegetable bought whether</p>
+				<p id="blurb">its a banana or carrot helps local</p> 
+				<p id="blurb">Wellington buisness such as the</p>
+				<p id="blurb">habourside market"</p>
+			</div>
+		</div>
+
+	
+	</body>
+	
+</html>

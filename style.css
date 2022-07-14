@@ -1,0 +1,125 @@
+/*displays background of page*/
+html{
+	background-image: linear-gradient(180deg, #FFDF6C, #FFDB5D);
+	background-size: 300% 300%;
+}
+
+/*font used for the entire page*/
+body {
+	font-family: "Lato", sans-serif;
+}
+
+p {
+	font-size: 15px;
+}
+
+h1 {
+	display: inline;
+}
+
+/*shape of button*/
+.button {
+	border-radius: 50%;
+}
+
+#head{
+	margin-right: 140px;
+	float: right;
+	text-decoration: underline;
+}
+
+/*spaces out blocks of text and forms*/
+.grid {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 20px;
+	padding: 10px;
+}
+
+.grid > div {
+	background-color: white;
+	text-align: center;
+	padding: 20px;
+	font-size: 15px;
+	box-shadow: 5px 10px;
+}
+
+/*rectangle shaped grid*/
+.item1 {
+	grid-row-start: 1;
+	grid-row-end: 5;
+}
+
+/*underlines titles*/
+.header{
+	text-decoration: underline;
+}
+
+/*spacing for various images, texts and forms*/
+#faqimage{
+	margin-right: 50px;
+}
+
+#blurb{
+	font-weight: bold;
+}
+
+#buyfruit{
+	float: left; 
+    width: 200px;
+	margin-left: 10px;
+}
+
+#buyvegetables{
+	float: left; 
+    width: 200px;
+}
+
+#display{
+	float: left; 
+    width: 200px;
+	margin-top: 15px;
+}
+
+#payn{
+	float: left; 
+    width: 200px;
+	margin-left: 500px;
+}
+
+#navigation{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	overflow: hidden;
+	display: inline;
+}
+
+/*displays navigation bar as a horizontal bar*/
+#navigation a{
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 14px;
+	display: inline;
+	text-decoration: none;
+}
+
+/*page currently on*/
+#navigation a.activepage{
+	background-color: #6DD020;
+}
+
+#navigation li{
+	float: right;
+}
+
+/*changes colour of hyperlinks*/
+#navigation a:visited{
+	color: white;
+}
+
+#navigation a:hover{
+	background-color: #111;
+}
